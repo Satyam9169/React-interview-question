@@ -1,0 +1,26 @@
+.Main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.main-container{
+    width: 80%;
+    margin: auto;
+}
+
+h4{
+    text-align: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    width: 200px;
+    background-color: aliceblue;
+}
