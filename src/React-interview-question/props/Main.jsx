@@ -47,12 +47,15 @@ const Main = () => {
         <Card>
           <h1>Hi, This is children props heading</h1>
           <p>
-            <li>props.children = special prop that lets a component wrap arbitrary
-            content.</li>
-            <li>We use it for reusable, composable UI structures. 
-            Best in</li>
-            <li>scenarios like cards, layouts, wrappers, modals, sidebars,
-            dashboards.</li>
+            <li>
+              props.children = special prop that lets a component wrap arbitrary
+              content.
+            </li>
+            <li>We use it for reusable, composable UI structures. Best in</li>
+            <li>
+              scenarios like cards, layouts, wrappers, modals, sidebars,
+              dashboards.
+            </li>
           </p>
         </Card>
       </div>

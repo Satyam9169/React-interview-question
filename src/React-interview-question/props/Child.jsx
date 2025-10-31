@@ -1,7 +1,6 @@
 import React from "react";
 
 const Child = ({ id, name, age, salary, cityName, viewSalary }) => {
-
   const handleSalary = () => {
     viewSalary(salary);
   };
