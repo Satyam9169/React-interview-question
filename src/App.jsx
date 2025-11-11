@@ -3,7 +3,8 @@ import React from "react";
 import "./App.css";
 // import { useSelector, useDispatch } from "react-redux";
 // import { increment, decrement } from "./redux/features/counterSlice";
-import CarouselItem from "./Machine-coding-round/Carousel/CarouselItem";
+// import CarouselItem from "./Machine-coding-round/Carousel/CarouselItem";
+import Clock from "./Machine-coding-round/digitalClock/Clock";
 
 const App = () => {
   // const count = useSelector((state) => state.counter.value);
@@ -13,7 +14,8 @@ const App = () => {
       <div>
         <h2>Hello React !!! React Interview Quesiton</h2> 
         {/* <Main /> */}
-         <CarouselItem />
+         {/* <CarouselItem /> */}
+         <Clock />
 
         {/* <div>counter : {count}</div>
         <button onClick={() => dispatch(increment())}>increment</button>
