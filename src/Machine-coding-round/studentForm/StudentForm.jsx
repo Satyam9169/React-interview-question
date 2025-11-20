@@ -4,7 +4,7 @@ const StudentForm = ({ form, error, handleChange, handleSubmit }) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="first_name">First Name :</label>
+        <label htmlFor="first_name">First Name ::</label>
         <input
           type="text"
           id="first_name"
