@@ -24,21 +24,6 @@ const StudentLogic = () => {
 
   const [student, setStudent] = useState([]);
 
-  const handleSubmit = useCallback(
-    (e) => {
-      e.preventDefault();
-      if (!validation()) return;
-      //Adding to the student
-      //setStudent(pre=> ([...pre, {...form, id:Date.now()}])); //this is shortcut
-      setStudent((preStudent) => {
-        const nextStudent = { ...form, id: Date.now() };
-        const newStudent = [...preStudent, nextStudent];
-        return newStudent;
-      });
-    },
-    [form]
-  );
-
   const [error, setError] = useState({});
 
   const validation = useCallback(() => {
@@ -53,6 +38,31 @@ const StudentLogic = () => {
     setError(newError);
   }, [form, error]);
 
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      if (!validation()) return;
+      //Adding to the student
+      //setStudent(pre=> ([...pre, {...form, id:Date.now()}])); //this is shortcut
+      setStudent((preStudent) => {
+        const nextStudent = { ...form, id: Date.now() };
+        const newStudent = [...preStudent, nextStudent];
+        return newStudent;
+      });
+
+      setForm({
+        first_name: "",
+        last_name: "",
+        mobile_no: "",
+        gender: "",
+        address: "",
+        location: "",
+      });
+      setError({});
+    },
+    [form, validation]
+  );
+
   return (
     <>
       <StudentForm
@@ -61,7 +71,7 @@ const StudentLogic = () => {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
-      <StudentTable />
+      <StudentTable student={student} />
     </>
   );
 };

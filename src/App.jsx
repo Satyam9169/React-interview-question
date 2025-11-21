@@ -1,7 +1,8 @@
 import React from "react";
+import StudentLogic from "./Machine-coding-round/studentForm/StudentLogic";
 // import Main from "./React-interview-question/props/Main";
-import "./App.css";
-import Student from "./Machine-coding-round/studentForm/Student";
+// import "./App.css";
+// import Student from "./Machine-coding-round/studentForm/Student";
 // import { useSelector, useDispatch } from "react-redux";
 // import { increment, decrement } from "./redux/features/counterSlice";
 // import CarouselItem from "./Machine-coding-round/Carousel/CarouselItem";
@@ -19,7 +20,8 @@ const App = () => {
          {/* <CarouselItem /> */}
          {/* <Clock /> */}
          {/* <TimerApp /> */}
-        <Student />
+        {/* <Student /> */}
+        <StudentLogic />
         {/* <div>counter : {count}</div>
         <button onClick={() => dispatch(increment())}>increment</button>
         <button onClick={() => dispatch(decrement())}>decrement</button> */}
