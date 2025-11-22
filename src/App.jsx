@@ -1,5 +1,6 @@
 import React from "react";
 import StudentLogic from "./Machine-coding-round/studentForm/StudentLogic";
+// import Bug1 from "./Debug/Bug1";
 // import Main from "./React-interview-question/props/Main";
 // import "./App.css";
 // import Student from "./Machine-coding-round/studentForm/Student";
@@ -15,13 +16,14 @@ const App = () => {
   return (
     <>
       <div>
-        <h2>Hello React !!! React Interview Quesiton</h2> 
+        <h2>Hello React !!! React Interview Quesiton</h2>
         {/* <Main /> */}
-         {/* <CarouselItem /> */}
-         {/* <Clock /> */}
-         {/* <TimerApp /> */}
+        {/* <CarouselItem /> */}
+        {/* <Clock /> */}
+        {/* <TimerApp /> */}
         {/* <Student /> */}
         <StudentLogic />
+        {/* <Bug1 apiUrl="https://dummyjson.com/users" /> */}
         {/* <div>counter : {count}</div>
         <button onClick={() => dispatch(increment())}>increment</button>
         <button onClick={() => dispatch(decrement())}>decrement</button> */}

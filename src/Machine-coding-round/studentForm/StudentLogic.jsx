@@ -23,7 +23,6 @@ const StudentLogic = () => {
   }, []);
 
   const [student, setStudent] = useState([]);
-
   const [error, setError] = useState({});
 
   const validation = useCallback(() => {
@@ -32,21 +31,27 @@ const StudentLogic = () => {
     if (!form.last_name.trim()) newError.last_name = "last name is required";
     if (!form.mobile_no.trim()) newError.mobile_no = "mobile no is required";
     else if (!/^[0-9]+$/.test(form.mobile_no))
-      newError.mobile_no = "mobile no contain digit only";
+      newError.mobile_no = "mobile no must contain digit only";
     else if (form.mobile_no.length !== 10)
-      newError.mobile_no = "mobile no must be 10 digit";
+      newError.mobile_no = "Mobile is must be 10 digit";
+    if (!form.gender) newError.gender = "gender is required";
+    if (!form.address.trim()) newError.address = "address is required";
+    if (!form.location.trim()) newError.location = "location is required";
     setError(newError);
-  }, [form, error]);
+    return Object.keys(newError).length === 0;
+  }, [form]);
 
   const handleSubmit = useCallback(
     (e) => {
       e.preventDefault();
+      console.log("FORM ADDING SUBMIT", form);
       if (!validation()) return;
       //Adding to the student
       //setStudent(pre=> ([...pre, {...form, id:Date.now()}])); //this is shortcut
       setStudent((preStudent) => {
         const nextStudent = { ...form, id: Date.now() };
         const newStudent = [...preStudent, nextStudent];
+        console.log("STUDENT ARRAY AFTER PUSH", newStudent);
         return newStudent;
       });
 

@@ -33,7 +33,6 @@ const Student = () => {
     (e) => {
       e.preventDefault();
       if (!validation()) return;
-
       // Add to the student
       setStudent((pre) => [...pre, { ...form, id: Date.now() }]);
       // setStudent((preStudent) => {
@@ -64,7 +63,6 @@ const Student = () => {
       return next;
     });
   }, []);
-
 
   //for heavy calculation in future like searching and sorting
   const studentMemo = useMemo(() => student, [student]);

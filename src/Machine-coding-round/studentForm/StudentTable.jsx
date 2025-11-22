@@ -5,7 +5,7 @@ const StudentTable = React.memo(({ student }) => {
     <table border="1">
       <thead>
         <tr>
-          <th>No</th>
+          <th>ID</th>
           <th>First Name</th>
           <th>Last Name</th>
           <th>Mobile NO</th>
@@ -16,8 +16,8 @@ const StudentTable = React.memo(({ student }) => {
       </thead>
       <tbody>
         {student.map((stu, index) => (
-          <tr>
-            <td>{index + 1}</td>
+          <tr key={index}>
+            <td>{stu.id}</td>
             <td>{stu.first_name}</td>
             <td>{stu.last_name}</td>
             <td>{stu.gender}</td>
