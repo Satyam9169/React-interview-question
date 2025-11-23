@@ -1,30 +1,31 @@
-import React, { useEffect, useState } from "react";
+// 🐞 BUG #1 — Stale State + Wrong Data Structure
+import React, { useState, useCallback } from "react";
 
-const Bug1 = () => {
-  const [page, setPage] = useState(1);
-  const [users, setUsers] = useState([]);
+export default function Bug1() {
+  const [student, setStudent] = useState([]);
+  const [form, setForm] = useState({ name: "" });
 
-  useEffect(() => {
-    console.log("Fetching users for page:", page);
-
-    fetch(`https://dummyjson.com/users?limit=3&skip=${page * 3}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setUsers((pre) => [...pre, ...data.users]); // BUG: stale + infinite re-renders
-      });
-  }, [page]); // ❌ missing dependency array causes infinite fetch
+  const handleSubmit = useCallback((e) => {
+    e.preventDefault();
+    setStudent((prev) => {
+      const next = { form, id: Date.now() }; // BUG: Nested object
+      return [...prev, next];
+    });
+  }, [form]);
 
   return (
     <>
-      <h2>Page: {page}</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          name="name"
+          value={form.name}
+          onChange={(e) => setForm({ name: e.target.value })}
+        />
+      </form>
 
-      <button onClick={() => setPage(page + 1)}>Next Page</button>
-
-      {users.map((u) => (
-        <p key={u.id}>{u.firstName}</p>
+      {student.map((s) => (
+        <p key={s.id}>{s.name}</p> {/* BUG: wrong property */}
       ))}
     </>
   );
-};
-
-export default Bug1;
+}
