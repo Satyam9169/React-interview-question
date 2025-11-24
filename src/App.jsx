@@ -1,5 +1,6 @@
 import React from "react";
-import StudentLogic from "./Machine-coding-round/studentForm/StudentLogic";
+import Filter from "./Machine-coding-round/SearchingApp/Filter";
+// import StudentLogic from "./Machine-coding-round/studentForm/StudentLogic";
 // import Bug1 from "./Debug/Bug1";
 // import Main from "./React-interview-question/props/Main";
 // import "./App.css";
@@ -22,7 +23,8 @@ const App = () => {
         {/* <Clock /> */}
         {/* <TimerApp /> */}
         {/* <Student /> */}
-        <StudentLogic />
+        {/* <StudentLogic /> */}
+        <Filter />
         {/* <Bug1 apiUrl="https://dummyjson.com/users" /> */}
         {/* <div>counter : {count}</div>
         <button onClick={() => dispatch(increment())}>increment</button>

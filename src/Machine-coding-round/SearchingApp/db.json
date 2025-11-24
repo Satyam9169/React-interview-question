@@ -1,0 +1,254 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Aman",
+      "lastName": "Sharma",
+      "email": "aman.sharma@example.com",
+      "phone": "9876543201",
+      "gender": "Male",
+      "department": "Computer Science",
+      "city": "Delhi"
+    },
+    {
+      "id": 2,
+      "firstName": "Riya",
+      "lastName": "Verma",
+      "email": "riya.verma@example.com",
+      "phone": "9876543202",
+      "gender": "Female",
+      "department": "Electronics",
+      "city": "Mumbai"
+    },
+    {
+      "id": 3,
+      "firstName": "Satyam",
+      "lastName": "Gupta",
+      "email": "satyam.gupta@example.com",
+      "phone": "9876543203",
+      "gender": "Male",
+      "department": "Mechanical",
+      "city": "Pune"
+    },
+    {
+      "id": 4,
+      "firstName": "Priya",
+      "lastName": "Rathod",
+      "email": "priya.rathod@example.com",
+      "phone": "9876543204",
+      "gender": "Female",
+      "department": "Civil",
+      "city": "Hyderabad"
+    },
+    {
+      "id": 5,
+      "firstName": "Arjun",
+      "lastName": "Yadav",
+      "email": "arjun.yadav@example.com",
+      "phone": "9876543205",
+      "gender": "Male",
+      "department": "IT",
+      "city": "Chennai"
+    },
+    {
+      "id": 6,
+      "firstName": "Neha",
+      "lastName": "Kapoor",
+      "email": "neha.kapoor@example.com",
+      "phone": "9876543206",
+      "gender": "Female",
+      "department": "Computer Science",
+      "city": "Delhi"
+    },
+    {
+      "id": 7,
+      "firstName": "Rohan",
+      "lastName": "Saxena",
+      "email": "rohan.saxena@example.com",
+      "phone": "9876543207",
+      "gender": "Male",
+      "department": "Electronics",
+      "city": "Mumbai"
+    },
+    {
+      "id": 8,
+      "firstName": "Tanya",
+      "lastName": "Mehra",
+      "email": "tanya.mehra@example.com",
+      "phone": "9876543208",
+      "gender": "Female",
+      "department": "IT",
+      "city": "Pune"
+    },
+    {
+      "id": 9,
+      "firstName": "Vikas",
+      "lastName": "Singh",
+      "email": "vikas.singh@example.com",
+      "phone": "9876543209",
+      "gender": "Male",
+      "department": "Mechanical",
+      "city": "Hyderabad"
+    },
+    {
+      "id": 10,
+      "firstName": "Anjali",
+      "lastName": "Bansal",
+      "email": "anjali.bansal@example.com",
+      "phone": "9876543210",
+      "gender": "Female",
+      "department": "Civil",
+      "city": "Chennai"
+    },
+    {
+      "id": 11,
+      "firstName": "Kabir",
+      "lastName": "Malhotra",
+      "email": "kabir.malhotra@example.com",
+      "phone": "9876543211",
+      "gender": "Male",
+      "department": "Computer Science",
+      "city": "Bangalore"
+    },
+    {
+      "id": 12,
+      "firstName": "Shruti",
+      "lastName": "Nair",
+      "email": "shruti.nair@example.com",
+      "phone": "9876543212",
+      "gender": "Female",
+      "department": "Electronics",
+      "city": "Kolkata"
+    },
+    {
+      "id": 13,
+      "firstName": "Kunal",
+      "lastName": "Patel",
+      "email": "kunal.patel@example.com",
+      "phone": "9876543213",
+      "gender": "Male",
+      "department": "IT",
+      "city": "Ahmedabad"
+    },
+    {
+      "id": 14,
+      "firstName": "Simran",
+      "lastName": "Chopra",
+      "email": "simran.chopra@example.com",
+      "phone": "9876543214",
+      "gender": "Female",
+      "department": "Civil",
+      "city": "Jaipur"
+    },
+    {
+      "id": 15,
+      "firstName": "Harsh",
+      "lastName": "Bhatt",
+      "email": "harsh.bhatt@example.com",
+      "phone": "9876543215",
+      "gender": "Male",
+      "department": "Mechanical",
+      "city": "Lucknow"
+    },
+    {
+      "id": 16,
+      "firstName": "Meera",
+      "lastName": "Shah",
+      "email": "meera.shah@example.com",
+      "phone": "9876543216",
+      "gender": "Female",
+      "department": "Computer Science",
+      "city": "Surat"
+    },
+    {
+      "id": 17,
+      "firstName": "Dev",
+      "lastName": "Raj",
+      "email": "dev.raj@example.com",
+      "phone": "9876543217",
+      "gender": "Male",
+      "department": "IT",
+      "city": "Bhopal"
+    },
+    {
+      "id": 18,
+      "firstName": "Aisha",
+      "lastName": "Sheikh",
+      "email": "aisha.sheikh@example.com",
+      "phone": "9876543218",
+      "gender": "Female",
+      "department": "Electronics",
+      "city": "Nagpur"
+    },
+    {
+      "id": 19,
+      "firstName": "Yuvaraj",
+      "lastName": "Krishnan",
+      "email": "yuvaraj.krishnan@example.com",
+      "phone": "9876543219",
+      "gender": "Male",
+      "department": "Civil",
+      "city": "Coimbatore"
+    },
+    {
+      "id": 20,
+      "firstName": "Nisha",
+      "lastName": "Rao",
+      "email": "nisha.rao@example.com",
+      "phone": "9876543220",
+      "gender": "Female",
+      "department": "IT",
+      "city": "Mangalore"
+    },
+    {
+      "id": 21,
+      "firstName": "Raj",
+      "lastName": "Chaudhary",
+      "email": "raj.chaudhary@example.com",
+      "phone": "9876543221",
+      "gender": "Male",
+      "department": "Mechanical",
+      "city": "Varanasi"
+    },
+    {
+      "id": 22,
+      "firstName": "Preeti",
+      "lastName": "Pandey",
+      "email": "preeti.pandey@example.com",
+      "phone": "9876543222",
+      "gender": "Female",
+      "department": "Computer Science",
+      "city": "Patna"
+    },
+    {
+      "id": 23,
+      "firstName": "Aayush",
+      "lastName": "Tiwari",
+      "email": "aayush.tiwari@example.com",
+      "phone": "9876543223",
+      "gender": "Male",
+      "department": "Civil",
+      "city": "Indore"
+    },
+    {
+      "id": 24,
+      "firstName": "Zara",
+      "lastName": "Khan",
+      "email": "zara.khan@example.com",
+      "phone": "9876543224",
+      "gender": "Female",
+      "department": "Electronics",
+      "city": "Noida"
+    },
+    {
+      "id": 25,
+      "firstName": "Manav",
+      "lastName": "Rajput",
+      "email": "manav.rajput@example.com",
+      "phone": "9876543225",
+      "gender": "Male",
+      "department": "IT",
+      "city": "Gurugram"
+    }
+  ]
+}
