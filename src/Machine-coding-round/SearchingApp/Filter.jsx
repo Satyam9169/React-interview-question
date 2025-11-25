@@ -1,22 +1,62 @@
 import React, { useState, useEffect, useMemo } from "react";
 import studentsData from "./db.json";
+// import useBruteForceSearch from "./useBruteForceSearch";
 
 const Filter = () => {
   const [filter, setFilter] = useState("");
 
-  // using performance optimization
+  const filteredUsers = useMemo(()=> {
+    const searchTerm = filter.toLowerCase().trim();
+    if(!searchTerm) return studentsData.students;
+    return studentsData.students.filter((item)=> 
+      Object.values(item).some(user => 
+        String(user).toLowerCase().trim() === searchTerm 
+      )
+    )
+  }, [filter])
 
-  // This is beginners  way to write the program
-  const filteredUser = studentsData.students.filter(
-    (user) =>
-      user.firstName.toLowerCase().includes(filter.toLowerCase()) ||
-      user.lastName.toLowerCase().includes(filter.toLowerCase()) ||
-      user.email.toLowerCase().includes(filter.toLowerCase()) ||
-      user.phone.toLowerCase().includes(filter.toLowerCase()) ||
-      user.gender.toLowerCase().includes(filter.toLowerCase()) ||
-      user.department.toLowerCase().includes(filter.toLowerCase()) ||
-      user.city.toLowerCase().includes(filter.toLowerCase())
-  );
+
+
+  // This is for the using custom hooks
+  // const filteredUser = useBruteForceSearch(studentsData.students, filter);
+  // using performance optimization and more optimized way
+  // const processedStudents = studentsData.students.map((s) => ({
+  //   ...s,
+  //   _search: (
+  //     s.firstName +
+  //     " " +
+  //     s.lastName +
+  //     " " +
+  //     s.email +
+  //     " " +
+  //     s.phone +
+  //     " " +
+  //     s.gender +
+  //     " " +
+  //     s.department +
+  //     " " +
+  //     s.city
+  //   ).toLowerCase(),
+  // }));
+
+  // const filteredUsers = useMemo(() => {
+  //   const q = filter.toLowerCase().trim();
+  //   if (!q) return processedStudents;
+
+  //   return processedStudents.filter((s) => s._search.includes(q));
+  // }, [filter, processedStudents]);
+
+  // This is beginners  way to write the program Broute Force
+  // const filteredUser = studentsData.students.filter(
+  //   (user) =>
+  //     user.firstName.toLowerCase().includes(filter.toLowerCase()) ||
+  //     user.lastName.toLowerCase().includes(filter.toLowerCase()) ||
+  //     user.email.toLowerCase().includes(filter.toLowerCase()) ||
+  //     user.phone.toLowerCase().includes(filter.toLowerCase()) ||
+  //     user.gender.toLowerCase().includes(filter.toLowerCase()) ||
+  //     user.department.toLowerCase().includes(filter.toLowerCase()) ||
+  //     user.city.toLowerCase().includes(filter.toLowerCase())
+  // );
 
   const handleChange = (e) => setFilter(e.target.value);
 
@@ -72,7 +112,7 @@ const Filter = () => {
         onChange={handleChange}
         placeholder="Type your text"
       />
-      {filteredUser.map((u, idx) => (
+      {filteredUsers.map((u, idx) => (
         <ul key={u.id}>
           <li>{idx + 1}</li>
           <li>{u.firstName}</li>
