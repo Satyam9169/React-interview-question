@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-
+// This search box for the exact search search keyword
 const useBruteForceSearch = (students, filter) => {
   return useMemo(() => {
     const q = filter.toLowerCase().trim();
