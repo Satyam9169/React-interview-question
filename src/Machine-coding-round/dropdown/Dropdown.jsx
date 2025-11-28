@@ -69,6 +69,7 @@ const Dropdown = () => {
 
   return (
     <>
+    {/* for showing the country name in dropdown */}
       <select value={selectedCountry} onChange={handleChange}>
         <option value="">--select--</option>
         {countryData.map((item) => (
