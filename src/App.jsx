@@ -1,6 +1,7 @@
 import React from "react";
+import Timer from "./React-interview-question/ref/Timer";
 // import Filter from "./Machine-coding-round/SearchingApp/Filter";
-import Dropdown from "./Machine-coding-round/dropdown/Dropdown";
+// import Dropdown from "./Machine-coding-round/dropdown/Dropdown";
 // import StudentLogic from "./Machine-coding-round/studentForm/StudentLogic";
 // import Bug1 from "./Debug/Bug1";
 // import Main from "./React-interview-question/props/Main";
@@ -26,7 +27,8 @@ const App = () => {
         {/* <Student /> */}
         {/* <StudentLogic /> */}
         {/* <Filter /> */}
-        <Dropdown />
+        {/* <Dropdown /> */}
+        <Timer />
         {/* <Bug1 apiUrl="https://dummyjson.com/users" /> */}
         {/* <div>counter : {count}</div>
         <button onClick={() => dispatch(increment())}>increment</button>
