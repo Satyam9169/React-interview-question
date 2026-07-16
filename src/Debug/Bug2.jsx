@@ -6,7 +6,8 @@ export default function Bug2() {
 
   useEffect(() => {
     console.log("Effect executed", count);
-  }); // ❌ No dependency → runs every render
+  },[count]); // ❌ No dependency → runs every render
+              // solution: Add the dependency array count
 
   return (
     <button onClick={() => setCount(count + 1)}>
